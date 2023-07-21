@@ -41,7 +41,7 @@ jobs:
           
       - name: Publish Nightly MainModule
         uses: fjogeleit/http-request-action@v1
-        if: github.repository == 'MediumCraft/Adonis' && github.event_name == 'push'
+        if: github.repository == 'Epix-Incorporated/Adonis' && github.event_name == 'push'
         with:
           url: "${{ secrets.PUBURL2 }}/?assetId=${{ secrets.NIGHTLY_MODULE_ID }}"
           method: "POST"
